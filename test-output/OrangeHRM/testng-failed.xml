@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [OrangeHRM]">
+  <test thread-count="5" parallel="tests" name="Testng(failed)">
+    <classes>
+      <class name="testLayer.LoginTest">
+        <methods>
+          <include name="close"/>
+          <include name="Login" invocation-numbers="0 1 2"/>
+          <include name="initsetup"/>
+        </methods>
+      </class> <!-- testLayer.LoginTest -->
+    </classes>
+  </test> <!-- Testng(failed) -->
+</suite> <!-- Failed suite [OrangeHRM] -->
